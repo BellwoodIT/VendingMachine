@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{15E456C7-2CBD-497C-8D07-5F443FF31D13}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VendingMachine</RootNamespace>
+    <AssemblyName>VendingMachine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>cherry.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessLevel\Calculation.cs" />
+    <Compile Include="BusinessLevel\Deno.cs" />
+    <Compile Include="BusinessLevel\Product.cs" />
+    <Compile Include="BusinessLevel\VendingMachine.cs" />
+    <Compile Include="UILevel\CtrlCardPayment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UILevel\CtrlCardPayment.Designer.cs">
+      <DependentUpon>CtrlCardPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILevel\CtrlCashPayment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UILevel\CtrlCashPayment.Designer.cs">
+      <DependentUpon>CtrlCashPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILevel\CtrlSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UILevel\CtrlSetting.Designer.cs">
+      <DependentUpon>CtrlSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILevel\CtrlThanks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UILevel\CtrlThanks.Designer.cs">
+      <DependentUpon>CtrlThanks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILevel\FrmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILevel\FrmDashboard.Designer.cs">
+      <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UILevel\CtrlCheckout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UILevel\CtrlCheckout.Designer.cs">
+      <DependentUpon>CtrlCheckout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILevel\CtrlHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UILevel\CtrlHome.Designer.cs">
+      <DependentUpon>CtrlHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILevel\CtrlSummary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UILevel\CtrlSummary.Designer.cs">
+      <DependentUpon>CtrlSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILevel\FrmShadow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UILevel\FrmShadow.designer.cs">
+      <DependentUpon>FrmShadow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UILevel\Keypad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UILevel\Keypad.designer.cs">
+      <DependentUpon>Keypad.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UILevel\CtrlCardPayment.resx">
+      <DependentUpon>CtrlCardPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILevel\CtrlCashPayment.resx">
+      <DependentUpon>CtrlCashPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILevel\CtrlSetting.resx">
+      <DependentUpon>CtrlSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILevel\CtrlThanks.resx">
+      <DependentUpon>CtrlThanks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILevel\FrmDashboard.resx">
+      <DependentUpon>FrmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UILevel\CtrlCheckout.resx">
+      <DependentUpon>CtrlCheckout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILevel\CtrlHome.resx">
+      <DependentUpon>CtrlHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILevel\CtrlSummary.resx">
+      <DependentUpon>CtrlSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILevel\FrmShadow.resx">
+      <DependentUpon>FrmShadow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UILevel\Keypad.resx">
+      <DependentUpon>Keypad.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cherry.ico" />
+    <Content Include="machine.ico" />
+    <None Include="Resources\arrow_left_36.png" />
+    <None Include="Resources\delete_36.png" />
+    <None Include="Resources\shopping_cart_36.png" />
+    <None Include="Resources\home_36.png" />
+    <None Include="Resources\checkout_36.png" />
+    <None Include="Resources\home_48.png" />
+    <None Include="Resources\checkout_48.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
