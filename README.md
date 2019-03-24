@@ -25,3 +25,4 @@ Requirements
 - if a credit card # is entered, any cash already added should be returned in full after a purchase is made 
 - for demo, the initial state should load a quantity of 5 of each supported cash denomination
 
+![My image](https://github.com/BennyLWK/VendingMachine/blob/master/DashboardUI.jpg)
