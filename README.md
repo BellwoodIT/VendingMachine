@@ -5,7 +5,7 @@ Software
 - Visual studio
 - .Net framework 4.0
 
-Requirements
+Project Requirements
 - web page interface to simulate physical payments
 - system should accept cash or credit cards 
   - the following cash denomination are accepted: $5, $1, 25¢, 10¢, 5¢ 
